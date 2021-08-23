@@ -49,27 +49,33 @@ https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 
 #### MVP
 
-REACT and CSS
+• REACT and CSS
 
-Getting the Drink Tab to show drink selection 
+• Getting the Drink Tab to show drink selection 
 
-Use CRUD to PUT POST AND GET info from the API
+• Use CRUD to PUT POST AND GET info from the API
 
-Use Bootstrap 
+• Use Bootstrap 
 
-Include Media query 
+• Include Media query 
+
+• Have at least 6 separate, rendered components.
+
+• Utilize React Router, installed via NPM.
+
+• Use functional components appropriately.
 
 
 
 #### PostMVP  
 
-Create a other tabs: Food, Music and Help
+• Create a other tabs: Food, Music and Help
 
-Use CRUD on all the new tabs
+• Use CRUD on all the new tabs
 
-Navigation Bar
+• Navigation Bar
 
-Make each Tab Media query compatible
+• Make each Tab Media query compatible
 
 
 ## Project Schedule
