@@ -1,4 +1,5 @@
 export const drinkURL = `https://api.airtable.com/v0/app8rvW4bLreZZKpo/drinks?maxRecords=3&view=Grid%20view`
+export const postDrinkURL = `https://api.airtable.com/v0/app8rvW4bLreZZKpo/drinks`
 export const foodURL = `https://api.airtable.com/v0/app8rvW4bLreZZKpo/food?maxRecords=3&view=Grid%20view`
 export const musicURL = `https://api.airtable.com/v0/app8rvW4bLreZZKpo/music?maxRecords=3&view=Grid%20view`
 

@@ -1,12 +1,13 @@
 import axios from 'axios'
 import './App.css';
-import { drinkURL, foodURL, musicURL, config } from './sources'
+import { getDrinkURL, drinkURL, foodURL, musicURL, config } from './sources'
 import { Link, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'
-import Drinks from './components/Drinks'
-import Paragraph from './components/Paragraph'
-import DirectPage from './components/DirectPage'
+import Drinks from './components/Drink/Drinks'
+import Paragraph from './components/Drink/Paragraph'
+import DirectPage from './components/Drink/DirectPage'
+import Suggestion from './components/Suggestion'
 
 function App() {
 
@@ -16,11 +17,12 @@ function App() {
     const fetchDrink = async () => {
       const drinkResp = await axios.get(drinkURL, config)
       setDrinks(drinkResp.data.records)
+      console.log(drinkResp)
     }
     fetchDrink()
   }, [])
 
-
+  console.log(drinks)
 
   return (
     <div className="mainBackground">
@@ -29,14 +31,20 @@ function App() {
         <Paragraph />
       </Route>
       <Route path='/drinks' exact>
+        <Link to='/new'>
+          <button>New Drink</button>
+        </Link>
         {drinks.map((drink, index) => {
           return (
             <Drinks key={index} drink={drink} />
           )
         })}
       </Route>
-      <Route path='/direct'>
-        <DirectPage />
+      <Route exact path='/drinks/:id'>
+        <DirectPage drink={drinks} />
+      </Route>
+      <Route path='/new'>
+        <Suggestion drinks={drinks} />
       </Route>
     </div>
   );

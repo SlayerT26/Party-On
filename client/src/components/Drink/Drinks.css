@@ -9,9 +9,9 @@
 
 }
 
-img {
-  width: 250px;
-  height: 250px;
+.directImage {
+  width: 325px;
+  height: 325px;
   border: solid black;
 }
 
