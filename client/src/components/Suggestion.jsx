@@ -1,7 +1,8 @@
 import axios from 'axios'
-import { useEffect, useState } from 'react'
-import { postDrinkURL, config } from '../sources'
+import { useEffect, useState, } from 'react'
+import { drinkURL, config } from '../sources'
 import './Suggestion.css'
+import { useHistory } from 'react-router-dom'
 
 function Suggestion(props) {
   const [name, setName] = useState('')
@@ -9,6 +10,8 @@ function Suggestion(props) {
   const [step, setStep] = useState('')
   const [image, setImage] = useState('')
   const [url, setUrl] = useState('')
+
+  const history = useHistory()
 
   const handleSubmit = async (event) => {
     event.preventDefault()
@@ -19,7 +22,9 @@ function Suggestion(props) {
       image,
       url
     }
-    await axios.post(postDrinkURL, { fields: newDrink }, config)
+    await axios.post(drinkURL, { fields: newDrink }, config)
+    props.setToggleFetch(sug => !sug)
+    history.push('./drinks')
   }
 
   return (

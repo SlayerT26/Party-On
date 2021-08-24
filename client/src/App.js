@@ -12,6 +12,7 @@ import Suggestion from './components/Suggestion'
 function App() {
 
   const [drinks, setDrinks] = useState([])
+  const [toggleFetch, setToggleFetch] = useState(true)
 
   useEffect(() => {
     const fetchDrink = async () => {
@@ -20,7 +21,7 @@ function App() {
       console.log(drinkResp)
     }
     fetchDrink()
-  }, [])
+  }, [toggleFetch])
 
   console.log(drinks)
 
@@ -31,8 +32,8 @@ function App() {
         <Paragraph />
       </Route>
       <Route path='/drinks' exact>
-        <Link to='/new'>
-          <button>New Drink</button>
+        <Link className="NewDrinkButton" to='/new'>
+          <button >New Drink</button>
         </Link>
         {drinks.map((drink, index) => {
           return (
@@ -41,10 +42,10 @@ function App() {
         })}
       </Route>
       <Route exact path='/drinks/:id'>
-        <DirectPage drink={drinks} />
+        <DirectPage drink={drinks} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path='/new'>
-        <Suggestion drinks={drinks} />
+        <Suggestion drinks={drinks} setToggleFetch={setToggleFetch} />
       </Route>
     </div>
   );

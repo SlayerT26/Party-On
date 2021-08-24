@@ -1,13 +1,15 @@
 import axios from 'axios'
-import { useParams } from 'react-router-dom'
+import { useHistory, useParams } from 'react-router-dom'
 import { postDrinkURL, config, drinkURL } from '../../sources'
 import './DirectPage.css'
 
 function DirectPage(props) {
   const params = useParams()
-
-  const handleDelete = async () => {
-    await axios.delete(`${drinkURL}/${props.drink.id}`, config)
+  const history = useHistory()
+  const handleDelete = async (id) => {
+    await axios.delete(`${drinkURL}/${id}`, config)
+    props.setToggleFetch((curr) => !curr)
+    history.push('/drinks')
   }
 
   return (
@@ -23,7 +25,7 @@ function DirectPage(props) {
             <h1>{drink.fields.Ingredients}</h1>
             <a href={drink.fields.Direct}>{drink.fields.Direct}</a>
             <br /><br />
-            <button onClick={handleDelete}>Delete </button>
+            <button className="deleteButton" onClick={() => handleDelete(drink.id)}>Delete </button>
           </div>
 
         </section>
