@@ -1,0 +1,10 @@
+.body {
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  font-family: 'Staatliches';
+  font-size: 30px;
+  color: rgb(155, 149, 149);
+  text-shadow: 0 0 3px #9a9797, 0 0 5px #0c0c1a;
+  padding-bottom: 30%;
+}

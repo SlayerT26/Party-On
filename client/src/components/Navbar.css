@@ -1,0 +1,24 @@
+nav {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Staatliches';
+  color: white;
+  margin-top: 0px;
+  text-decoration: none;
+
+}
+.heading {
+  text-align: center;
+  font-family: 'Staatliches';
+  font-size: 100px;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: rgba(155, 149, 149, 0);
+  text-shadow: 0 0 3px #d2cccc, 0 0 5px #0c0c1a;
+}
+
+.NavBar {
+  text-decoration: none;
+  color: rgba(155, 149, 149, 0.899);
+  text-shadow: 0 0 3px #d2cccc, 0 0 5px #0c0c1a;
+}

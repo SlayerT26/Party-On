@@ -1,0 +1,21 @@
+.drinkList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgba(255, 255, 255, 0.317);
+  margin: 15px 15% 0px 15%;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  border: solid black;
+}
+
+.directLink {
+  text-decoration: none;
+  color: white;
+}
