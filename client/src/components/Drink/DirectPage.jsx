@@ -1,7 +1,8 @@
 import axios from 'axios'
 import { useHistory, useParams } from 'react-router-dom'
-import { postDrinkURL, config, drinkURL } from '../../sources'
+import { config, drinkURL } from '../../sources'
 import './DirectPage.css'
+import { Button } from 'react-bootstrap'
 
 function DirectPage(props) {
   const params = useParams()
@@ -19,15 +20,14 @@ function DirectPage(props) {
           <div>
             <img className="specificImage" src={drink.fields.image ? drink.fields.image : 'https://thumbor.thedailymeal.com/LaejLerD2WBfDRbcIfF5XED8Pj0=//https://www.thedailymeal.com/sites/default/files/2019/08/26/Cocktail_History_HERO.jpg'} alt="drink" />
           </div>
-          <div>
-            <h1>{drink.fields.name}</h1>
-            <h1>{drink.fields.steps}</h1>
-            <h1>{drink.fields.ingredients}</h1>
-            <a href={drink.fields.direct}>{drink.fields.direct}</a>
+          <div className='directGrid'>
+            <h1 className="directHeading" >{drink.fields.name}</h1>
+            <h1 className="directInfo">-Ingredients- <br />{drink.fields.ingredients}</h1>
+            <h1 className="directInfo">-Instruction- <br />{drink.fields.steps}</h1>
+            <a className="directlink" href={drink.fields.direct}>{drink.fields.direct}</a>
             <br /><br />
-            <button className="deleteButton" onClick={() => handleDelete(drink.id)}>Delete </button>
+            <button className="deleteButton" onClick={() => handleDelete(drink.id)}>Delete</button>
           </div>
-
         </section>
       )
       )}

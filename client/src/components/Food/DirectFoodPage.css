@@ -1,4 +1,4 @@
-.specific {
+.foodSpecific {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: rgba(255, 255, 255, 0.317);
@@ -9,29 +9,29 @@
   margin: 5% 10%;
 }
 
-.specificImage {
+.foodSpecificImage {
   width: 475px;
   height: 475px;
 }
 
-.extra {
+.extraFood {
   padding-bottom: 10%;
 }
 
-.directHeading {
+.directFoodHeading {
   font-size: 60px;
   font-family: 'Staatliches';
-  text-shadow: 0 0 3px #000000, 0 0 5px #000000;;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   color: white;
 }
 
-.directInfo {
+.directFoodInfo {
   color: white;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   font-size: 24px;
 }
 
-.deleteButton {
+.deleteFoodButton {
   color: white;
   width: 150px;
   height: 33px;
@@ -40,7 +40,7 @@
   border-style: groove;
 }
 
-.directlink {
+.directFoodLink {
   font-size: 17px;
   color: white;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;

@@ -7,13 +7,13 @@
   height: 100%;
 }
 
-.NewDrinkButton {
+.NewButton {
   text-align: center;
   display: flex;
   justify-content: center;
 }
 
-.drinkButton {
+.Button {
   text-decoration: none;
 }
 

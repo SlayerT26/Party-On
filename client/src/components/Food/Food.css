@@ -1,37 +1,37 @@
-.drinkList {
+.foodList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  background-color: rgba(255, 255, 255, 0.495);
   margin: 5% 15% 0px 15%;
+  background-color: rgba(255, 255, 255, 0.495);
   text-align: center;
   padding: 10px;
   border: solid rgba(0, 0, 0, 0.468) 8px;
 }
 
-.drinkImage {
-  width: 325px;
+.directFoodImage {
   height: 325px;
-  border: solid black;
+  width: 325px;
+  border: solid rgb(0, 0, 0) 3px;
 }
 
-.directLink {
+.foodLink {
   text-decoration: none;
   color: rgb(255, 255, 255); 
 }
 
-.drinkHeading {
+.foodHeading{
   font-size: 50px;
   font-family: 'Staatliches';
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   text-decoration: underline;
 }
 
-.drinkDescription {
+.foodDescription {
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   font-size: 23px;
 }
 
-.drinkClick {
+.foodClick {
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   font-size: 20px;
 }

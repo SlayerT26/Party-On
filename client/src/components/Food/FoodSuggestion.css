@@ -1,0 +1,48 @@
+.inputFood {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(255, 255, 255, 0.495);
+  padding: 2%;
+}
+
+.NewFoodHeading{
+  text-align: center;
+  font-family: 'Staatliches';
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  margin-top: 30px;
+  }
+
+.submitFoodButton {
+  height: 40px;
+  font-size: 30px;
+}
+
+.foodLabel {
+  font-size: 30px;
+  font-family: 'Staatliches';
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: white;
+}
+
+.foodInput {
+  height: 30px;
+}
+.foodInput[type="text"] {
+  font-size: 17px;
+}
+.foodInput[type="url"] {
+  font-size: 17px;
+}
+
+.foodTextInput {
+  height: 60px;
+}
+.foodTextInput[type="text"] {
+  font-size: 17px;
+}
