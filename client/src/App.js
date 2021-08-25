@@ -1,6 +1,6 @@
 import axios from 'axios'
 import './App.css';
-import { getDrinkURL, drinkURL, foodURL, musicURL, config } from './sources'
+import { drinkURL, foodURL, musicURL, config } from './sources'
 import { Link, Route } from 'react-router-dom'
 import { useEffect, useState } from 'react';
 import Navbar from './components/Navbar'
@@ -18,12 +18,10 @@ function App() {
     const fetchDrink = async () => {
       const drinkResp = await axios.get(drinkURL, config)
       setDrinks(drinkResp.data.records)
-      console.log(drinkResp)
+
     }
     fetchDrink()
   }, [toggleFetch])
-
-  console.log(drinks)
 
   return (
     <div className="mainBackground">
@@ -33,7 +31,7 @@ function App() {
       </Route>
       <Route path='/drinks' exact>
         <Link className="NewDrinkButton" to='/new'>
-          <button >New Drink</button>
+          <button className="drinkButton">New Drink</button>
         </Link>
         {drinks.map((drink, index) => {
           return (

@@ -7,9 +7,9 @@ import { useHistory } from 'react-router-dom'
 function Suggestion(props) {
   const [name, setName] = useState('')
   const [ingredients, setIngredients] = useState('')
-  const [step, setStep] = useState('')
+  const [steps, setSteps] = useState('')
   const [image, setImage] = useState('')
-  const [url, setUrl] = useState('')
+  const [direct, setDirect] = useState('')
 
   const history = useHistory()
 
@@ -18,13 +18,13 @@ function Suggestion(props) {
     const newDrink = {
       name,
       ingredients,
-      step,
+      steps,
       image,
-      url
+      direct,
     }
     await axios.post(drinkURL, { fields: newDrink }, config)
-    props.setToggleFetch(sug => !sug)
-    history.push('./drinks')
+    props.setToggleFetch((sug) => !sug)
+    history.push('/drinks')
   }
 
   return (
@@ -35,11 +35,11 @@ function Suggestion(props) {
         <label className='drinkLabel' htmlFor='ingredients'>Ingredients: </label>
         <textarea required id='ingredients' type='text' onChange={(e) => setIngredients(e.target.value)} value={ingredients} /><br />
         <label className='drinkLabel' htmlFor='step'>Steps: </label>
-        <textarea required id='step' type='text' onChange={(e) => setStep(e.target.value)} value={step} /><br />
+        <textarea required id='step' type='text' onChange={(e) => setSteps(e.target.value)} value={steps} /><br />
         <label className='drinkLabel' htmlFor='image'>Image Address: </label>
-        <input id='image' type='text' onChange={(e) => setImage(e.target.value)} value={image} /><br />
+        <input id='image' type='url' onChange={(e) => setImage(e.target.value)} value={image} /><br />
         <label className='drinkLabel' htmlFor='url'>URL: </label>
-        <input id='url' type='text' onChange={(e) => setUrl(e.target.value)} value={url} />
+        <input id='direct' type='url' onChange={(e) => setDirect(e.target.value)} value={direct} />
         <button type='submit'>Submit</button>
       </form>
     </>
