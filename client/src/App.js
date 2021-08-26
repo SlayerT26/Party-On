@@ -11,11 +11,15 @@ import Suggestion from './components/Drink/Suggestion'
 import Food from './components/Food/Food'
 import DirectFoodPage from './components/Food/DirectFoodPage'
 import FoodSuggestion from './components/Food/FoodSuggestion'
+import Music from './components/Music/Music'
+import DirectMusicPage from './components/Music/DirectMusicPage'
+import ReactPlayer from 'react-player';
 
 function App() {
 
   const [drinks, setDrinks] = useState([])
   const [food, setFood] = useState([])
+  const [music, setMusic] = useState([])
   const [toggleFetch, setToggleFetch] = useState(true)
 
   useEffect(() => {
@@ -32,6 +36,14 @@ function App() {
       setFood(foodResp.data.records)
     }
     fetchFood()
+  }, [toggleFetch])
+
+  useEffect(() => {
+    const fetchMusic = async () => {
+      const musicResp = await axios.get(musicURL, config)
+      setMusic(musicResp.data.records)
+    }
+    fetchMusic()
   }, [toggleFetch])
 
   return (
@@ -76,6 +88,19 @@ function App() {
           </Route>
           <Route exact path='/newFood'>
             <FoodSuggestion food={food} setToggleFetch={setToggleFetch} />
+          </Route>
+        </div>
+        {/* ////////////////////////////////////////////////////////////////////////////////////// */}
+        <div className="MusicTab">
+          <Route path='/music' exact>
+            {music.map((music, index) => {
+              return (
+                <Music key={index} music={music} />
+              )
+            })}
+          </Route>
+          <Route exact path='/music:id'>
+            <DirectMusicPage music={music} setToggleFetch={setToggleFetch} />
           </Route>
         </div>
       </div>
