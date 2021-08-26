@@ -4,6 +4,7 @@ import { config, musicURL } from '../../sources'
 // import './DirectMusicPage.css'
 import ReactPlayer from 'react-player';
 
+
 function DirectMusicPage(props) {
 
   const params = useParams()
@@ -17,19 +18,13 @@ function DirectMusicPage(props) {
   return (
     <>
       {props.music.filter((music) => params.id === music.id).map((music) => (
-        <section className='specific'>
-          <div>
-            <img className="specificMusicImage" src={music.fields.album ? music.fields.album : 'https://www.maketecheasier.com/assets/uploads/2019/11/add-art-missing-1.jpg'} alt="drink" />
-          </div>
-          {/* <div className='directMusicGrid'>
-            <br /><br />
-            <button className="deleteButton" onClick={() => handleDelete(music.id)}>Delete</button>
-          </div> */}
+        <section className='Musicspecific'>
+          <ReactPlayer
+            url={music.fields.direct}
+          />
         </section>
       )
       )}
-      <div className="extra">
-      </div>
     </>
   )
 }

@@ -5,6 +5,8 @@ function Music(props) {
 
   const { name, album, artist } = props.music.fields
 
+  console.log(props)
+
   return (
     <>
       <Link className="directMusicLink" to={`/music/${props.music.id}`}>

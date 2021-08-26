@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import './Drinks.css'
 
 function Drinks(props) {
+
   const { name, image, description } = props.drink.fields
 
   return (

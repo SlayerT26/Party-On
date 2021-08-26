@@ -12,8 +12,8 @@ import Food from './components/Food/Food'
 import DirectFoodPage from './components/Food/DirectFoodPage'
 import FoodSuggestion from './components/Food/FoodSuggestion'
 import Music from './components/Music/Music'
-import DirectMusicPage from './components/Music/DirectMusicPage'
-import ReactPlayer from 'react-player';
+import DirectMusicPage from './components/Music/DirectMusicPage';
+
 
 function App() {
 
@@ -99,7 +99,7 @@ function App() {
               )
             })}
           </Route>
-          <Route exact path='/music:id'>
+          <Route exact path='/music/:id'>
             <DirectMusicPage music={music} setToggleFetch={setToggleFetch} />
           </Route>
         </div>
