@@ -1,8 +1,8 @@
 import axios from 'axios'
 import { useHistory, useParams } from 'react-router-dom'
 import { config, musicURL } from '../../sources'
-// import './DirectMusicPage.css'
 import ReactPlayer from 'react-player';
+import './DirectMusicPage.css'
 
 
 function DirectMusicPage(props) {
@@ -20,11 +20,25 @@ function DirectMusicPage(props) {
       {props.music.filter((music) => params.id === music.id).map((music) => (
         <section className='Musicspecific'>
           <ReactPlayer
-            url={music.fields.direct}
-          />
+            playing={true}
+            controls={true}
+            width="650px"
+            height="430px"
+            url={music.fields.direct} />
+          <div className='directMusicGrid'>
+            <h1 className="directMusicHeading" >{music.fields.name}</h1>
+            <h3 className="title">-Artist-</h3>
+            <h1 className='directMusicArtist'>{music.fields.artist}</h1>
+            <h3 className="title">-Direct URL-</h3>
+            <a className="directMusicLink" href={music.fields.direct}>{music.fields.direct}</a>
+            <br /><br />
+            <button className="deleteMusicButton" onClick={() => handleDelete(music.id)}>Delete</button>
+          </div>
         </section>
       )
       )}
+      <div className="extraMusic">
+      </div>
     </>
   )
 }

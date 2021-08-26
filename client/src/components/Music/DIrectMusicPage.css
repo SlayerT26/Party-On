@@ -1,0 +1,50 @@
+.Musicspecific {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.317);
+  text-align: center;
+  padding: 20px;
+  margin: 5% 8%;
+}
+
+.directMusicHeading {
+  font-size: 50px;
+  font-family: 'Staatliches';
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: white;
+}
+
+.directMusicArtist {
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  font-size: 34px;
+  margin-top: 0;
+}
+
+.title {
+  margin-bottom: 0px;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
+
+.directMusicLink {
+  font-size: 17px;
+  color: white;
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  text-decoration: underline;
+}
+
+.deleteMusicButton {
+  color: white;
+  width: 150px;
+  height: 33px;
+  background-color: rgba(0, 0, 0, 0.879);
+  font-family: Arial, Helvetica, sans-serif;
+  border-style: groove;
+  margin-top: 15px;
+}
+
+.extraMusic {
+  padding-bottom: 10%;
+}

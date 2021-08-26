@@ -6,6 +6,7 @@
   text-align: center;
   padding: 10px;
   border: solid rgba(0, 0, 0, 0.468) 8px;
+  transition: .2s;
 }
 
 .albumImage {
@@ -34,4 +35,8 @@
 .musicClick {
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
   font-size: 20px;
+}
+
+.musicList:hover {
+  transform: scale(1.1);
 }

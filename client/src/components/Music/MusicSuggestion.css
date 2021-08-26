@@ -1,0 +1,48 @@
+.inputMusic {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 25%;
+  margin-right: 25%;
+  background-color: rgba(255, 255, 255, 0.495);
+  padding: 2%;
+}
+
+.NewMusicHeading{
+  text-align: center;
+  font-family: 'Staatliches';
+  text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+  color: white;
+  font-size: 50px;
+  font-style: italic;
+  margin-top: 30px;
+  }
+
+  .submitMusicButton {
+    height: 40px;
+    font-size: 30px;
+  }
+
+  .musicLabel {
+    font-size: 30px;
+    font-family: 'Staatliches';
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+    color: white;
+  }
+
+  .musicInput {
+    height: 30px;
+  }
+  .musicInput[type="text"] {
+    font-size: 17px;
+  }
+  .musicInput[type="url"] {
+    font-size: 17px;
+  }
+  
+  .musicTextInput {
+    height: 60px;
+  }
+  .musicTextInput[type="text"] {
+    font-size: 17px;
+  }

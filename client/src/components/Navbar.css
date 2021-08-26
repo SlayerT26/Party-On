@@ -7,7 +7,7 @@ nav {
   text-decoration: none;
 
 }
-.heading {
+  .heading{
   text-align: center;
   font-family: 'Staatliches';
   font-size: 100px;
@@ -18,10 +18,18 @@ nav {
   text-decoration: none;
 }
 
+.mainMenu {
+  display: flex;
+  justify-content: center;
+}
+
 .NavBar {
+  font-size: 33px;
   text-decoration: none;
   color: white;
-  text-shadow: 0 0 3px #ffffff, 0 0 5px #000000;
+  text-shadow: 0 0 3px #000000, 0 0 5px #ffffff;
   margin-right: 10%;
   margin-left: 10%;
+  transition: .2s;
 }
+

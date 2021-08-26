@@ -5,15 +5,39 @@
   background-size: cover;
   padding-bottom: inherit;
   height: 100%;
+  animation-name: wayne;
+  animation-iteration-count: infinite;
+  animation-duration: 30s;
 }
 
 .NewButton {
   text-align: center;
   display: flex;
   justify-content: center;
+  text-decoration: none;
 }
 
 .Button {
-  text-decoration: none;
+  height: 40px;
+  width: 200px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.495);
+  font-family: 'Staatliches';
+  font-size: 30px;
+  margin-top: 20px;
 }
+
+@keyframes wayne {
+  0% {background-image: url(./image/party-on.jpeg);}
+  20% {background-image: url(./image/garth.jpeg);}
+  40% {background-image: url(./image/waynes-car.jpeg);}
+  60% {background-image: url(./image/garth-hair.jpeg);}
+  80% {background-image: url(./image/wayne-pepsi.jpeg);}
+  100% {background-image: url(./image/garth2.jpeg);}
+}
+
+
+
+
+
 

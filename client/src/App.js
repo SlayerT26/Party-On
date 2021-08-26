@@ -12,7 +12,10 @@ import Food from './components/Food/Food'
 import DirectFoodPage from './components/Food/DirectFoodPage'
 import FoodSuggestion from './components/Food/FoodSuggestion'
 import Music from './components/Music/Music'
-import DirectMusicPage from './components/Music/DirectMusicPage';
+import DirectMusicPage from './components/Music/DirectMusicPage'
+import MusicSuggestion from './components/Music/MusicSuggestion'
+import Help from './components/Extra/Help'
+import Help2 from './components/Extra/Help2'
 
 
 function App() {
@@ -56,7 +59,7 @@ function App() {
         <div className="DrinkTab">
           <Route path='/drinks' exact>
             <Link className="NewButton" to='/newDrink'>
-              <button className="Button">New Drink</button>
+              <button className="Button">New Party Drink</button>
             </Link>
             {drinks.map((drink, index) => {
               return (
@@ -71,11 +74,10 @@ function App() {
             <Suggestion drinks={drinks} setToggleFetch={setToggleFetch} />
           </Route>
         </div>
-        {/* /////////////////////////////////////////////////////////////////////////////////// */}
         <div className='FoodTab'>
           <Route path='/food' exact>
             <Link className="NewButton" to='/newFood'>
-              <button className="drinkButton">New Party Dish</button>
+              <button className="Button">New Party Dish</button>
             </Link>
             {food.map((food, index) => {
               return (
@@ -90,9 +92,11 @@ function App() {
             <FoodSuggestion food={food} setToggleFetch={setToggleFetch} />
           </Route>
         </div>
-        {/* ////////////////////////////////////////////////////////////////////////////////////// */}
         <div className="MusicTab">
           <Route path='/music' exact>
+            <Link className="NewButton" to='/newMusic'>
+              <button className="Button">New Party Song</button>
+            </Link>
             {music.map((music, index) => {
               return (
                 <Music key={index} music={music} />
@@ -101,6 +105,17 @@ function App() {
           </Route>
           <Route exact path='/music/:id'>
             <DirectMusicPage music={music} setToggleFetch={setToggleFetch} />
+          </Route>
+          <Route exact path='/newMusic'>
+            <MusicSuggestion />
+          </Route>
+        </div>
+        <div>
+          <Route path='/help' exact>
+            <Help />
+          </Route>
+          <Route path='/moreHelp' exact>
+            <Help2 />
           </Route>
         </div>
       </div>
