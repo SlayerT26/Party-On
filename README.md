@@ -126,6 +126,8 @@ Allowing the user to recieve, post, and delete info.
 
 ## Code Snippet-----
 
+
+
 <div className="DrinkTab">
           <Route path='/drinks' exact>
             <Link className="NewButton" to='/newDrink'>
@@ -144,7 +146,10 @@ Allowing the user to recieve, post, and delete info.
             <Suggestion drinks={drinks} setToggleFetch={setToggleFetch} />
           </Route>
         </div>
+        
+        
 
 ## Change Log-----
  August 26 final update on Read.me
+ August 26 Added code snippet
  
