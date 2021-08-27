@@ -126,7 +126,24 @@ Allowing the user to recieve, post, and delete info.
 
 ## Code Snippet-----
 
-
+<div className="DrinkTab">
+          <Route path='/drinks' exact>
+            <Link className="NewButton" to='/newDrink'>
+              <button className="Button">New Party Drink</button>
+            </Link>
+            {drinks.map((drink, index) => {
+              return (
+                <Drinks key={index} drink={drink} />
+              )
+            })}
+          </Route>
+          <Route exact path='/drinks/:id'>
+            <DirectPage drink={drinks} setToggleFetch={setToggleFetch} />
+          </Route>
+          <Route path='/newDrink'>
+            <Suggestion drinks={drinks} setToggleFetch={setToggleFetch} />
+          </Route>
+        </div>
 
 ## Change Log-----
  August 26 final update on Read.me
