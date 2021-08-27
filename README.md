@@ -12,7 +12,7 @@ Welcome to Party On!
 Please enjoy our app, with all the abundance of Drink, Food, and Music suggestion. And if you have a suggestion of your own. Please, feel free to post it on our app. Now... Party On!
 
 ## API and Data Sample
-https://api.airtable.com/v0/app8rvW4bLreZZKpo/drinks
+
 
      "records": [
         {
@@ -43,8 +43,6 @@ https://api.airtable.com/v0/app8rvW4bLreZZKpo/drinks
 ## Wireframes & Component Hierarchy
 
 https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
-
-![image](https://user-images.githubusercontent.com/87334634/130277661-b03a61ae-2d03-43d7-b4e9-3cbdf0fde713.png)
 
 
 #### MVP
