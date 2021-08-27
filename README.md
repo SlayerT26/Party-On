@@ -126,9 +126,8 @@ Allowing the user to recieve, post, and delete info.
 
 ## Code Snippet-----
 
-
-
-<div className="DrinkTab">
+ <div className="DrinkTab">
+     
           <Route path='/drinks' exact>
             <Link className="NewButton" to='/newDrink'>
               <button className="Button">New Party Drink</button>
