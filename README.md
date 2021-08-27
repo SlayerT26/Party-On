@@ -44,6 +44,8 @@ Please enjoy our app, with all the abundance of Drink, Food, and Music suggestio
 
 https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 
+![image](https://user-images.githubusercontent.com/87334634/131069717-6dd94761-4852-4f35-afab-5f809ec411d2.png)
+
 
 #### MVP
 
@@ -52,8 +54,6 @@ https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 • Getting the Drink Tab to show drink selection 
 
 • Use CRUD to PUT POST AND GET info from the API
-
-• Use Bootstrap 
 
 • Include Media query 
 
@@ -67,11 +67,15 @@ https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 
 #### PostMVP  
 
-• Create a other tabs: Food, Music and Help
+• Create other tabs: Food, Music and Help
+
+• Repeat all MVP for Food, Music, and Help
 
 • Use CRUD on all the new tabs
 
 • Navigation Bar
+
+• Instant youtube video's
 
 • Make each Tab Media query compatible
 
@@ -82,18 +86,19 @@ https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 |  Day | Deliverable | Status
 |---|---| ---|
 |August 19-20th| Prompt / Wireframes / Timeframes / README.md / Project Approval / Project start | imcomplete
-|August 23| Pseudocode / Core Application Structure / API  | incomplete
-|August 24| Coding/ MVP Start | incomplete
-|August 25| MVP completion/ CSS Detailing / PostMVP Start| incomplete
-|August 26| PostMVP / CSS Fine Detailing/ Last minute Update | incomplete
-|August 27| Presentations | incomplete
+|August 23| Pseudocode / Core Application Structure / API  | complete
+|August 24| Coding/ MVP Start | complete
+|August 25| MVP completion/ CSS Detailing / PostMVP Start| complete
+|August 26| PostMVP / CSS Fine Detailing/ Last minute Update | complete
+|August 27| Presentations | complete
 
 
 
 
 ### Goal
 
-Create an app. That the user can recieve info. Click on the info to also, if wanted to. Edit the information. Also 
+Create an app. That can show two different screen sizes. Both desktop and tablets. All still giving info from the API for topics. Food, Drinks, and Music.
+Allowing the user to recieve, post, and delete info.
 
 
 
@@ -101,21 +106,21 @@ Create an app. That the user can recieve info. Click on the info to also, if wan
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Styling CSS | H | 4hrs | 0hrs | hrs |
-| APP page | H | 4hrs | hrs | hrs |
-| Route and Link | H | 2hrs| hrs | hrs |
-| useState and useEffect | H | 2hrs | hrs | hrs |
-| Adding Grid | H | 4hrs | hrs | hrs |
-| Drink Tab | H | 3hrs | hr | hrs |
-| Food Tab | H | 3hrs | hrs | hrs |
-| Music Tab | H | 3hrs | hrs | hrs |
-| Help Page | H | 1hrs | hrs | hrs |
-| Media Query | H | 1hrs | hrs | hrs |
-| BootStrap | H | 2hrs | hrs | hrs |
-| Final CSS Detailing | H | 2hrs | hrs | hrs |
-| NavBar | H | 2hrs | hrs | hrs |
-| Event Listeners | H | 2hrs | hrs | hrs |
-| Total | H | 47hrs | hrs | hrs |
+| Styling CSS | H | 4hrs | 6hrs | 6hrs |
+| APP page | H | 4hrs | 4hrs | 4hrs |
+| Route and Link | H | 2hrs| 2hrs | 2hrs |
+| useState and useEffect | H | 2hrs | 3hrs | 3hrs |
+| Adding Grid and Flexbox| H | 4hrs | 2hrs | 2hrs |
+| Youtube Video | H | 3hrs | 4hr | 4hrs |
+| Drink Tab | H | 3hrs | 4hr | 4hrs |
+| Food Tab | H | 3hrs | 3hrs | 3hrs |
+| Music Tab | H | 3hrs | 2hrs | 2hrs |
+| Help Page | H | 1hrs | 1hrs | 1hrs |
+| Media Query | H | 1hrs | 2hrs | 2hrs |
+| Final CSS Detailing | H | 2hrs | 2hrs | 2hrs |
+| NavBar | H | 2hrs | 2hrs | 2hrs |
+| Event Listeners | H | 2hrs | 2hrs | 2hrs |
+| Total | H | 37hrs | 38hrs | 35hrs |
 
 
 
@@ -124,5 +129,5 @@ Create an app. That the user can recieve info. Click on the info to also, if wan
 
 
 ## Change Log-----
- 
+ August 26 final update on Read.me
  
