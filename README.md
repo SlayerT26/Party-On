@@ -85,7 +85,7 @@ https://whimsical.com/party-on-Xgjw1WF2aqu6TtStqFJmzE
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|August 19-20th| Prompt / Wireframes / Timeframes / README.md / Project Approval / Project start | imcomplete
+|August 19-20th| Prompt / Wireframes / Timeframes / README.md / Project Approval / Project start | complete
 |August 23| Pseudocode / Core Application Structure / API  | complete
 |August 24| Coding/ MVP Start | complete
 |August 25| MVP completion/ CSS Detailing / PostMVP Start| complete
