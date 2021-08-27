@@ -40,3 +40,23 @@
 .foodList:hover{
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1100px) {
+  .foodList{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .foodImage {
+    width: 450px;
+    height: 450px;
+  }
+  .foodHeading {
+    font-size: 60px;
+  }
+  .foodDescription{
+    font-size: 35px;
+  }
+  .foodClick {
+    font-size: 29px;
+  }
+}

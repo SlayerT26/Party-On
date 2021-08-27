@@ -40,3 +40,23 @@
 .drinkList:hover{
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1100px) {
+  .drinkList{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .drinkImage {
+    width: 450px;
+    height: 450px;
+  }
+  .drinkHeading {
+    font-size: 60px;
+  }
+  .drinkDescription{
+    font-size: 35px;
+  }
+  .drinkClick {
+    font-size: 29px;
+  }
+}

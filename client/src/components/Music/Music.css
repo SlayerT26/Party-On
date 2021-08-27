@@ -40,3 +40,23 @@
 .musicList:hover {
   transform: scale(1.1);
 }
+
+@media screen and (max-width: 1100px) {
+  .musicList{
+    margin-left: 0%;
+    margin-right: 0%;
+  }
+  .albumImage {
+    width: 450px;
+    height: 450px;
+  }
+  .musicHeading {
+    font-size: 60px;
+  }
+  .musicArtist{
+    font-size: 35px;
+  }
+  .musicClick {
+    font-size: 29px;
+  }
+}

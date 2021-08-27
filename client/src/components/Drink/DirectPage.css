@@ -45,3 +45,30 @@
   color: white;
   text-shadow: 0 0 3px #000000, 0 0 5px #000000;
 }
+
+@media screen and (max-width: 1100px) {
+  .specific {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  .specificImage{
+    width: 700px;
+    height: 700px;
+  }
+  .directHeading{
+    font-size: 90px;
+  }
+  .directInfo {
+    font-size: 40px;
+  }
+  .directLink{
+    font-size: 30px;
+  }
+  .deleteButton{
+    width: 300px;
+    height: 50px;
+    font-size: 39px;
+  }
+}

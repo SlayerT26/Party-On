@@ -46,3 +46,25 @@
   .musicTextInput[type="text"] {
     font-size: 17px;
   }
+
+  @media screen and (max-width: 1100px) {
+    .inputMusic{
+      margin-left: 10%;
+      margin-right: 10%;
+    }
+    .musicInput {
+      height: 70px;
+    }
+    .musicInput[type="text"] {
+      font-size: 34px;
+    }
+    .musicTextInput {
+      height: 90px;
+    }
+    .musicTextInput[type="text"] {
+      font-size: 34px;
+    }
+    .musicInput[type="url"] {
+      font-size: 34px;
+    }
+  }

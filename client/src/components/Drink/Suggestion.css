@@ -46,3 +46,25 @@ margin-top: 30px;
 .drinkTextInput[type="text"] {
   font-size: 17px;
 }
+
+@media screen and (max-width: 1100px) {
+  .input{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .drinkInput {
+    height: 70px;
+  }
+  .drinkInput[type="text"] {
+    font-size: 34px;
+  }
+  .drinkTextInput {
+    height: 90px;
+  }
+  .drinkTextInput[type="text"] {
+    font-size: 34px;
+  }
+  .drinkInput[type="url"] {
+    font-size: 34px;
+  }
+}

@@ -24,7 +24,8 @@ function DirectMusicPage(props) {
             controls={true}
             width="650px"
             height="430px"
-            url={music.fields.direct} />
+            url={music.fields.direct}
+            id="musicvideo" />
           <div className='directMusicGrid'>
             <h1 className="directMusicHeading" >{music.fields.name}</h1>
             <h3 className="title">-Artist-</h3>

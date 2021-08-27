@@ -4,10 +4,10 @@
   background-attachment: fixed;
   background-size: cover;
   padding-bottom: inherit;
-  height: 100%;
+  background-repeat: repeat; 
   animation-name: wayne;
   animation-iteration-count: infinite;
-  animation-duration: 30s;
+  animation-duration: 30s;   
 }
 
 .NewButton {
@@ -24,7 +24,12 @@
   background-color: rgba(255, 255, 255, 0.495);
   font-family: 'Staatliches';
   font-size: 30px;
-  margin-top: 20px;
+  margin-top: 5%;
+  transition: .2s;
+}
+
+.Button:hover{
+  transform: scale(1.3);
 }
 
 @keyframes wayne {
@@ -37,7 +42,12 @@
 }
 
 
-
-
+ @media screen and (max-width: 1100px) {  
+  .Button {
+    height: 70px;
+    width: 300px;
+    font-size: 40px;
+  }
+}
 
 
