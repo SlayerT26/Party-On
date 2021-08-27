@@ -149,6 +149,7 @@ Allowing the user to recieve, post, and delete info.
         
 
 ## Change Log-----
- August 26 final update on Read.me
- August 26 Added code snippet
+ • August 26 final update on Read.me
+ 
+ • August 26 Added code snippet
  
