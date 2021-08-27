@@ -1,4 +1,4 @@
-// import ReactPlayer from "react-player"
+import ReactPlayer from "react-player"
 import { Link } from 'react-router-dom'
 import './Help.css'
 
@@ -15,11 +15,11 @@ function Help() {
           </Link>
         </div>
         <div className='firstHelp'>
-          {/* <ReactPlayer
+          <ReactPlayer
             playing={true}
             width="850px"
             height="630px"
-            url="www.youtube.com/watch?v=dCYUvCdiPfI" /> */}
+            url="www.youtube.com/watch?v=dCYUvCdiPfI" />
         </div>
       </div>
     </>

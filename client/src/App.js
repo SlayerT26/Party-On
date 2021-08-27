@@ -12,7 +12,7 @@ import Food from './components/Food/Food'
 import DirectFoodPage from './components/Food/DirectFoodPage'
 import FoodSuggestion from './components/Food/FoodSuggestion'
 import Music from './components/Music/Music'
-import DirectMusicPage from './components/Music/DirectMusicPage'
+import DirectMusic from './components/Music/DirectMusic'
 import MusicSuggestion from './components/Music/MusicSuggestion'
 import Help from './components/Extra/Help'
 import Help2 from './components/Extra/Help2'
@@ -104,7 +104,7 @@ function App() {
             })}
           </Route>
           <Route exact path='/music/:id'>
-            <DirectMusicPage music={music} setToggleFetch={setToggleFetch} />
+            <DirectMusic music={music} setToggleFetch={setToggleFetch} />
           </Route>
           <Route exact path='/newMusic'>
             <MusicSuggestion />
